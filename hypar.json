@@ -1,0 +1,39 @@
+{
+  "$schema": "https://hypar.io/Schemas/Function.json",
+  "id": "51adc7a5-37cc-4bf7-b0e9-1ddc63f96b60",
+  "name": "Content Examples",
+  "description": "The ContentExamples function.",
+  "language": "C#",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "Length": {
+        "type": "number",
+        "description": "The Length.",
+        "minimum": 1.0,
+        "maximum": 10.0,
+        "multipleOf": 1.0,
+        "$hyparUnitType": "length"
+      },
+      "Width": {
+        "type": "number",
+        "description": "The Width.",
+        "minimum": 1.0,
+        "maximum": 10.0,
+        "multipleOf": 1.0,
+        "$hyparUnitType": "length"
+      }
+    }
+  },
+  "outputs": [
+    {
+      "unit_type": "volume",
+      "name": "Volume",
+      "description": "The volume.",
+      "type": "number"
+    }
+  ],
+  "repository_url": "https://github.com/hypar-io/function",
+  "source_file_key": null,
+  "preview_image": null
+}
